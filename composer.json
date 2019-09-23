@@ -35,7 +35,7 @@
     "roots/wordpress": "5.2.2",
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "wpackagist-theme/understrap": "dev-trunk",
+    "wpackagist-theme/understrap":"0.9.4",
     "wpackagist-plugin/w3-total-cache":"dev-trunk",
     "wpackagist-plugin/contact-form-7": "dev-trunk",
     "wpackagist-plugin/autoconvert-greeklish-permalinks": "dev-trunk",
