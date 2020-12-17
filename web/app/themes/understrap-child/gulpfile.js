@@ -194,10 +194,6 @@ gulp.task( 'copy-assets', function() {
     gulp.src( `${paths.node}popper.js/dist/umd/popper.js` )
         .pipe( gulp.dest( `${paths.js}${paths.vendor}` ) );
 
-// UnderStrap SCSS files
-    gulp.src( `${paths.node}understrap/sass/**/*.scss` )
-        .pipe( gulp.dest( `${paths.dev}/sass/understrap` ) );
-
     return stream;
 });
 

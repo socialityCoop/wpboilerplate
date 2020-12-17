@@ -38,8 +38,6 @@
     "wpackagist-theme/understrap":"0.9.4",
     "wpackagist-plugin/w3-total-cache":"dev-trunk",
     "wpackagist-plugin/contact-form-7": "dev-trunk",
-    "wpackagist-plugin/autoconvert-greeklish-permalinks": "dev-trunk",
-    "wpackagist-plugin/remove-uppercase-accents": "dev-trunk",
     "wpackagist-plugin/wordpress-seo": "dev-trunk"
   },
   "require-dev": {
