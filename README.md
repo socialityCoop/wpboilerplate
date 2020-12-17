@@ -1,8 +1,8 @@
-# [Sociality WP Boilerplate]
+# Sociality WP Boilerplate
 
-To be honest it is not such a huge deal. We basically have combined the arctitecture of [Bedrock](https://roots.io/bedrock/) provide by [Roots](https://roots.io/) with [UnsterstrapChild](https://github.com/understrap/understrap-child/) with a small [fix](https://github.com/understrap/understrap-child/issues/229#issuecomment-554858596) provided [monkishtypist](https://github.com/monkishtypist). We have also added some plugins we use in all our websites.
+To be honest it is not such a huge deal. We basically have combined the arctitecture of [Bedrock](https://roots.io/bedrock/) provided by [Roots](https://roots.io/) with [UnsterstrapChild](https://github.com/understrap/understrap-child/) applying a small [fix](https://github.com/understrap/understrap-child/issues/229#issuecomment-554858596) provided by [monkishtypist](https://github.com/monkishtypist). We have also added some plugins we use in all our websites.
 
-Our goal is to provide our developers with a ready to work with WordPress template to create custome websites usings
+Our goal is to provide our developers with a ready to work with WordPress template to create custom websites usings:
 
 * Composer for plugin managment
 * Git for versioning
@@ -18,7 +18,7 @@ actully all features of Understrap, Understrap Child and Bedrock combined.
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
 * Node & npm - [Insall](https://nodejs.org/en/)
 
-For developers on Windows we use
+For developers on Windows we use:
 
 * XAMPP - [Install](https://www.apachefriends.org/index.html)
 * Git for Windows - [Install](https://git-scm.com/download/win)
@@ -35,9 +35,9 @@ For developers on Windows we use
     * `DB_NAME` - Database name
     * `DB_USER` - Database user
     * `DB_PASSWORD` - Database password
-  * You will also need to create
-  *  We have alreay provided the rest of the enviroment valiable for local developemnt (newproject.local). Ofcoure you can change them as you wish but you should take in mind that your should also change them also in the `gulpconfig.json` file. For deployment you will create a new `.env` file with the production enviromental variables.
-7. If you use XAMPP or Apache you should followr the following to access your website from your browser
+  * You will also need to add WordPress Key. You can create yours [here](https://roots.io/salts.html).
+  * We have alreay provided the rest of the enviromental valiable for local developemnt (newproject.local). Ofcourse you can change them as you wish but you should take in mind that you should also change them in the `gulpconfig.json` file of the Child Theme. For deployment you will create a new `.env` file with the production enviromental variables.
+7. If you use XAMPP or Apache you should follow the following to access your website from your browser
   * Add the following to your `hosts` file (C:\Windows\System32\drivers\etc) `127.0.0.1 newproject.local` 
   * Add the following to your appache vhosts file (C:\xampp\apache\conf\extra\httpd-vhosts.conf):
     ```
@@ -53,14 +53,14 @@ For developers on Windows we use
 9. Access in your browser `http://newproject.local` to finalize your WordPress instalation
 
 You are ready!
-To use gulp and BrowserSync you go to the Child Drestorcy and run `gulp watch-bs`. All changes you make in your SASS files will automatically compiled and if you access the website through `http://localhost:3000` the website will reload automatically everytime a change is made.
+To use gulp and BrowserSync you go to the Child Drestorcy and run `gulp watch-bs`. All changes you make in your SASS files will be automatically compiled and if you access the website through `http://localhost:3000` the website will reload automatically everytime a change is made.
 
 
 ## Documentation
 
-Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
-Understrap Child documentation is available at [https://github.com/understrap/understrap-child](https://github.com/understrap/understrap-child)
-Understrap documentation is available at [https://github.com/understrap/understrap](https://github.com/understrap/understrap-child)
+* Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
+* Understrap Child documentation is available at [https://github.com/understrap/understrap-child](https://github.com/understrap/understrap-child)
+* Understrap documentation is available at [https://github.com/understrap/understrap](https://github.com/understrap/understrap-child)
 
 ## Contributing
 
