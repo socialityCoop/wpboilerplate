@@ -1,23 +1,19 @@
 {
-  "name": "sociality/newproject",
+  "name": "author/newproject",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress Website based on roots/bedrock",
-  "homepage": "https://newproject.gr",
+  "description": "WordPress Website based on roots/bedrock and UnderStrap",
+  "homepage": "https://newproject.org",
   "authors": [
     {
-      "name": "Sociality",
-      "email": "contact@sociality.gr",
-      "homepage": "https://sociality.gr"
+      "name": "Author",
+      "email": "author@mail.com",
+      "homepage": "https://author.org"
     }
   ],
   "keywords": [
-    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
+    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config","understrap","understrap child"
   ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
   "config": {
     "preferred-install": "dist"
   },
