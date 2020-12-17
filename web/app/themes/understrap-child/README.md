@@ -49,7 +49,7 @@ Or, to run with Browser-Sync:
 - First change the browser-sync options to reflect your environment in the file `/gulpconfig.json` in the beginning of the file:
 ```javascript
   "browserSyncOptions" : {
-    "proxy": "localhost/wordpress/",
+    "proxy": "newproject.local",
     "notify": false
   }
 };

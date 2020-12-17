@@ -1,23 +1,19 @@
 {
-  "name": "sociality/newproject",
+  "name": "author/newproject",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress Website based on roots/bedrock",
-  "homepage": "https://newproject.gr",
+  "description": "WordPress Website based on roots/bedrock and UnderStrap",
+  "homepage": "https://newproject.org",
   "authors": [
     {
-      "name": "Sociality",
-      "email": "contact@sociality.gr",
-      "homepage": "https://sociality.gr"
+      "name": "Author",
+      "email": "author@mail.com",
+      "homepage": "https://author.org"
     }
   ],
   "keywords": [
-    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config"
+    "bedrock", "composer", "roots", "wordpress", "wp", "wp-config","understrap","understrap child"
   ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
-  },
   "config": {
     "preferred-install": "dist"
   },
@@ -38,8 +34,6 @@
     "wpackagist-theme/understrap":"0.9.4",
     "wpackagist-plugin/w3-total-cache":"dev-trunk",
     "wpackagist-plugin/contact-form-7": "dev-trunk",
-    "wpackagist-plugin/autoconvert-greeklish-permalinks": "dev-trunk",
-    "wpackagist-plugin/remove-uppercase-accents": "dev-trunk",
     "wpackagist-plugin/wordpress-seo": "dev-trunk"
   },
   "require-dev": {
