@@ -1,8 +1,8 @@
-# Sociality WP Boilerplate
+# WordPress Boilerplate (Bedrock & UnderStrap)
 
 To be honest it is not such a huge deal. We basically have combined the arctitecture of [Bedrock](https://roots.io/bedrock/) provided by [Roots](https://roots.io/) with [UnsterstrapChild](https://github.com/understrap/understrap-child/) applying a small [fix](https://github.com/understrap/understrap-child/issues/229#issuecomment-554858596) provided by [monkishtypist](https://github.com/monkishtypist). We have also added some plugins we use in all our websites.
 
-Our goal is to provide our developers with a ready to work with WordPress template to create custom websites usings:
+Our goal is to provide our developers at [Sociality](https://sociality.coop) with a ready to work WordPress installation in order to create custom websites using:
 
 * Composer for plugin managment
 * Git for versioning
