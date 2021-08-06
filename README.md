@@ -1,6 +1,6 @@
 # WordPress Boilerplate (Bedrock & UnderStrap)
 
-To be honest it is not such a huge deal. We basically have combined the arctitecture of [Bedrock](https://roots.io/bedrock/) provided by [Roots](https://roots.io/) with [UnsterstrapChild](https://github.com/understrap/understrap-child/) applying a small [fix](https://github.com/understrap/understrap-child/issues/229#issuecomment-554858596) provided by [monkishtypist](https://github.com/monkishtypist). We have also added some plugins we use in all our websites.
+To be honest it is not such a huge deal. We basically have combined the arctitecture of [Bedrock](https://roots.io/bedrock/) provided by [Roots](https://roots.io/) with [UnsterstrapChild](https://github.com/understrap/understrap-child/). We have also added some plugins we use in all our websites.
 
 Our goal is to provide our developers at [Sociality](https://sociality.coop) with a ready to work WordPress installation in order to create custom websites using:
 
@@ -27,7 +27,7 @@ For developers on Windows we use:
 
 1. Download this repo as a zip
 2. Creat a new repo in your favorite git system and clone it in your local dev enviroment. If you use XAMPP is `htdocs`.
-3. Add the files you donwloaded in your new repo named `newproject `
+3. Add the files you donwloaded in your new repo named `newproject ` or as you with (you will need to change it in other places too as listed below)
 4. Open your cli and in the root director run `composer install & composer update`
 5. Create a copy of the `env.example` and name it `.env`.
 6. Create a Database and a Database user in your local environment and add the credentials in the `.env` file as following:
@@ -50,10 +50,10 @@ For developers on Windows we use:
     </VirtualHost>
     ```
 8. Go to the Child theme directory `web/app/themes/understap-child` and run `npm install`
-9. Access in your browser `http://newproject.local` to finalize your WordPress instalation
+9. Access in your browser `http://newproject.local` to finalize your WordPress instalation. You may need to restart appache.
 
 You are ready!
-To use gulp and BrowserSync you go to the Child Drestorcy and run `gulp watch-bs`. All changes you make in your SASS files will be automatically compiled and if you access the website through `http://localhost:3000` the website will reload automatically everytime a change is made.
+To use gulp and BrowserSync you go to the Child Drestorcy and run `gulp watch-bs`. All changes you make in your SASS files will be automatically compiled and if you access the website through `http://newproject.local:3000` the website will reload automatically everytime a change is made.
 
 
 ## Documentation
