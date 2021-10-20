@@ -34,7 +34,7 @@ For developers on Windows we use:
   * Database variables
     * `DB_NAME` - Database name
     * `DB_USER` - Database user
-    * `DB_PASSWORD` - Database password
+    * `DB_PASSWORD` - Database password (don't use the # character in the password - it will break)
   * You will also need to add WordPress Key. You can create yours [here](https://roots.io/salts.html).
   * We have alreay provided the rest of the enviromental valiable for local developemnt (newproject.local). Ofcourse you can change them as you wish but you should take in mind that you should also change them in the `gulpconfig.json` file of the Child Theme. For deployment you will create a new `.env` file with the production enviromental variables.
 7. If you use XAMPP or Apache you should follow the following to access your website from your browser
