@@ -6,7 +6,7 @@ Our goal is to provide our developers at [Sociality](https://sociality.coop) wit
 
 * Composer for plugin managment
 * Git for versioning
-* Gulp for SASS processing
+* npm for SASS processing
 
 actully all features of Understrap, Understrap Child and Bedrock combined.
 
@@ -52,15 +52,15 @@ For developers on Windows we use:
 8. Go to the Child theme directory `web/app/themes/understap-child` and run `npm install`
 9. Access in your browser `http://newproject.local` to finalize your WordPress instalation. You may need to restart appache.
 
-You are ready!
-To use gulp and BrowserSync you go to the Child Drestorcy and run `gulp watch-bs`. All changes you make in your SASS files will be automatically compiled and if you access the website through `http://newproject.local:3000` the website will reload automatically everytime a change is made.
+You are ready! You can autorecomplie SASS with `npm run watch`
+To use  BrowserSync you go to the Child Directory and run `npm run watch-bs`. You may need to first change the local browsersync output in `/src/build/browser-sync.config.js`. All changes you make in your SASS files will be automatically compiled and if you access the website through `http://newproject.local:3000` the website will reload automatically everytime a change is made.
 
 
 ## Documentation
 
 * Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
 * Understrap Child documentation is available at [https://github.com/understrap/understrap-child](https://github.com/understrap/understrap-child)
-* Understrap documentation is available at [https://github.com/understrap/understrap](https://github.com/understrap/understrap-child)
+* Understrap documentation is available at [https://github.com/understrap/understrap](https://github.com/understrap/understrap)
 
 ## Contributing
 
