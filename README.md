@@ -38,7 +38,23 @@ For developers on Windows we use:
   * You will also need to add WordPress Key. You can create yours [here](https://roots.io/salts.html).
   * We have alreay provided the rest of the enviromental valiable for local developemnt (newproject.local). Ofcourse you can change them as you wish but you should take in mind that you should also change them in the `gulpconfig.json` file of the Child Theme. For deployment you will create a new `.env` file with the production enviromental variables.
 7. If you use XAMPP or Apache you should follow the following to access your website from your browser
+
+* Go to your XAMPP directory and open apache config file located at C:\xampp\apache\conf\httpd.conf in any text editor and locate the following lines:
+  ```
+  # Virtual Hosts
+  # Include C:\xampp\apache/extra\httpd-vhosts.conf
+  ```
+
+* Remove the hash (pound) sign from the beginning of the line that begins with Include
+
+  ```
+  # Virtual Hosts
+  Include C:\xampp\apache/extra\httpd-vhosts.conf
+  ```
+* Save the file, and then open C:\xampp\apache\extra\httpd-vhosts.conf . This is where you define the virtual hosts.
+
   * Add the following to your `hosts` file (C:\Windows\System32\drivers\etc) `127.0.0.1 newproject.local` 
+  
   * Add the following to your appache vhosts file (C:\xampp\apache\conf\extra\httpd-vhosts.conf):
     ```
     <VirtualHost *:80>
