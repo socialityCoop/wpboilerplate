@@ -20,7 +20,7 @@ actully all features of Understrap, Understrap Child and Bedrock combined.
 
 For developers on Windows we use:
 
-* WAMP - [Install]([https://www.apachefriends.org/index.html](https://sourceforge.net/projects/wampserver/))
+* WAMP - [Install](https://sourceforge.net/projects/wampserver)
 * Git for Windows - [Install](https://git-scm.com/download/win)
 
 ## Installation
