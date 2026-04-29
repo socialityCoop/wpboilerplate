@@ -27,7 +27,7 @@ For developers on Windows we use:
 
 1. Download this repo as a zip
 2. Creat a new repo in your favorite git system and clone it in your local dev enviroment. If you use XAMPP is `htdocs`.
-3. Add the files you donwloaded in your new repo named `newproject ` or as you with (you will need to change it in other places too as listed below)
+3. Add the files you donwloaded in your new repo named `newproject ` or as you wish (you will need to change it in other places too as listed below)
 4. Open your cli and in the root director run `composer install & composer update`
 5. Create a copy of the `env.example` and name it `.env`.
 6. Create a Database and a Database user in your local environment and add the credentials in the `.env` file as following:
