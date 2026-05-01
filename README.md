@@ -16,7 +16,7 @@ actully all features of Understrap, Understrap Child and Bedrock combined.
 
 * PHP >= 7.1
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
-* Node & npm - [Insall](https://nodejs.org/en/)
+* Node & npm - [Install](https://nodejs.org/en/)
 
 For developers on Windows we use:
 
