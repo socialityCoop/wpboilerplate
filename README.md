@@ -1,83 +1,54 @@
-# WordPress Boilerplate (Bedrock & UnderStrap)
+<p align="center">
+  <a href="https://roots.io/bedrock/">
+    <img alt="Bedrock" src="https://cdn.roots.io/app/uploads/logo-bedrock.svg" height="100">
+  </a>
+</p>
 
-To be honest it is not such a huge deal. We basically have combined the architecture of [Bedrock](https://roots.io/bedrock/) provided by [Roots](https://roots.io/) with [UnsterstrapChild](https://github.com/understrap/understrap-child/). We have also added some plugins we use in all our websites.
+<p align="center">
+  <a href="https://packagist.org/packages/roots/bedrock"><img alt="Packagist Installs" src="https://img.shields.io/packagist/dt/roots/bedrock?label=projects%20created&colorB=2b3072&colorA=525ddc&style=flat-square"></a>
+  <a href="https://packagist.org/packages/roots/wordpress"><img alt="roots/wordpress Packagist Downloads" src="https://img.shields.io/packagist/dt/roots/wordpress?label=roots%2Fwordpress%20downloads&logo=roots&logoColor=white&colorB=2b3072&colorA=525ddc&style=flat-square"></a>
+  <img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/roots/bedrock/master/composer.json&label=wordpress&logo=roots&logoColor=white&query=$.require[%22roots/wordpress%22]&colorB=2b3072&colorA=525ddc&style=flat-square">
+  <a href="https://github.com/roots/bedrock/actions/workflows/ci.yml"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/roots/bedrock/ci.yml?branch=master&logo=github&label=CI&style=flat-square"></a>
+  <a href="https://twitter.com/rootswp"><img alt="Follow Roots" src="https://img.shields.io/badge/follow%20@rootswp-1da1f2?logo=twitter&logoColor=ffffff&message=&style=flat-square"></a>
+  <a href="https://github.com/sponsors/roots"><img src="https://img.shields.io/badge/sponsor%20roots-525ddc?logo=github&style=flat-square&logoColor=ffffff&message=" alt="Sponsor Roots"></a>
+</p>
 
-Our goal is to provide our developers at [Sociality](https://sociality.coop) with a ready to work WordPress installation in order to create custom websites using:
+<p align="center">WordPress boilerplate with Composer, easier configuration, and an improved folder structure</p>
 
-* Composer for plugin managment
-* Git for versioning
-* npm for SASS processing
+<p align="center">
+  <a href="https://roots.io/bedrock/">Website</a> &nbsp;&nbsp; <a href="https://roots.io/bedrock/docs/installation/">Documentation</a> &nbsp;&nbsp; <a href="https://github.com/roots/bedrock/releases">Releases</a> &nbsp;&nbsp; <a href="https://discourse.roots.io/">Community</a>
+</p>
 
-actully all features of Understrap, Understrap Child and Bedrock combined.
+## Support us
 
-Οι οδηγίες είναι προσβάσιμες και στα Ελληνικά [εδώ](https://learn.sociality.gr/knwbase/wordpress-web-development-me-bedrock/)
+Roots is an independent open source org, supported only by developers like you. Your sponsorship funds [WP Packages](https://wp-packages.org/) and the entire Roots ecosystem, and keeps them independent. Support us by purchasing [Radicle](https://roots.io/radicle/) or [sponsoring us on GitHub](https://github.com/sponsors/roots) — sponsors get access to our private Discord.
 
-## Requirements
+### Sponsors
 
-* PHP >= 7.1
-* Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
-* Node & npm - [Install](https://nodejs.org/en/)
+<a href="https://carrot.com/"><img src="https://cdn.roots.io/app/uploads/carrot.svg" alt="Carrot" height="90"></a> <a href="https://wordpress.com/"><img src="https://cdn.roots.io/app/uploads/wordpress.svg" alt="WordPress.com" height="90"></a> <a href="https://www.itineris.co.uk/"><img src="https://cdn.roots.io/app/uploads/itineris.svg" alt="Itineris" height="90"></a> <a href="https://kinsta.com/?kaid=OFDHAJIXUDIV"><img src="https://cdn.roots.io/app/uploads/kinsta.svg" alt="Kinsta" height="90"></a>
 
-For developers on Windows we use:
+## Overview
 
-* WAMP - [Install](https://sourceforge.net/projects/wampserver)
-* Git for Windows - [Install](https://git-scm.com/download/win)
+Bedrock is a WordPress boilerplate for developers that want to manage their projects with Git and Composer. Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](http://12factor.net/) methodology, including the [WordPress specific version](https://roots.io/twelve-factor-wordpress/).
 
-## Installation
+- Better folder structure
+- Dependency management with [Composer](https://getcomposer.org)
+  - [`roots/wordpress`](https://wp-packages.org/wordpress-core) package for WordPress core
+  - [WP Packages](https://wp-packages.org/) repository for WordPress plugins and themes
+- Easy WordPress configuration with environment specific files
+- Environment variables with [Dotenv](https://github.com/vlucas/phpdotenv)
+- Autoloader for mu-plugins (use regular plugins as mu-plugins)
 
-1. Download this repo as a zip
-2. Create a new repo in your favorite git system and clone it in your local dev environment. 
-3. Add the files you downloaded in your new repo named `newproject ` or as you wish - you will need to change it in other places too as listed below.
-4. Open your cli and in the root director run `composer install & composer update`
-5. Create a copy of the `env.example` and name it `.env`.
-6. Create a Database and a Database user in your local environment and add the credentials in the `.env` file as following:
-  * Database variables
-    * `DB_NAME` - Database name
-    * `DB_USER` - Database user
-    * `DB_PASSWORD` - Database password (don't use the # character in the password - it will break)
-  * You will also need to add WordPress Key. You can create yours [here](https://roots.io/salts.html).
-  * We have already provided the rest of the environmental variables for local development (newproject.local). Of course you can change them as you wish. For deployment you will create a new `.env` file with the production environmental variables.
-7. If you use XAMPP or Apache you should follow the following to access your website from your browser
+## Getting Started
 
-* Go to your XAMPP directory and open apache config file located at C:\xampp\apache\conf\httpd.conf in any text editor and locate the following lines:
-  ```
-  # Virtual Hosts
-  # Include C:\xampp\apache/extra\httpd-vhosts.conf
-  ```
+See the [Bedrock installation documentation](https://roots.io/bedrock/docs/installation/).
 
-* Remove the hash (pound) sign from the beginning of the line that begins with Include
+## Community
 
-  ```
-  # Virtual Hosts
-  Include C:\xampp\apache/extra\httpd-vhosts.conf
-  ```
-* Save the file, and then open C:\xampp\apache\extra\httpd-vhosts.conf . This is where you define the virtual hosts.
+Keep track of development and community news.
 
-  * Add the following to your `hosts` file (C:\Windows\System32\drivers\etc) `127.0.0.1 newproject.local` 
-  
-  * Add the following to your appache vhosts file (C:\xampp\apache\conf\extra\httpd-vhosts.conf):
-    ```
-    <VirtualHost *:80>
-      DocumentRoot "C:\xampp\htdocs\newproject\web"
-      ServerName newproject.local
-      ServerAlias www.newproject.local
-      ErrorLog "logs/ousite.gr-error.log"
-      DirectoryIndex index.php index.html index.html
-    </VirtualHost>
-    ```
-8. Go to the Child theme directory `web/app/themes/understap-child` and run `npm install`
-9. Access in your browser `http://newproject.local` to finalize your WordPress installation. You may need to restart apache.
-
-You are ready! You can autorecomplie SASS with `npm run watch`
-To use  BrowserSync you go to the Child Directory and run `npm run watch-bs`. You may need to first change the local browsersync output in `/src/build/browser-sync.config.js`. All changes you make in your SASS files will be automatically compiled and if you access the website through `http://newproject.local:3000` the website will reload automatically everytime a change is made.
-
-
-## Documentation
-
-* Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
-* Understrap Child documentation is available at [https://github.com/understrap/understrap-child](https://github.com/understrap/understrap-child)
-* Understrap documentation is available at [https://github.com/understrap/understrap](https://github.com/understrap/understrap)
-
-## Contributing
-
-Contributions are more than welcome from everyone. 
+- Join us on Discord by [sponsoring us on GitHub](https://github.com/sponsors/roots)
+- Join us on [Roots Discourse](https://discourse.roots.io/)
+- Follow [@rootswp on Twitter](https://twitter.com/rootswp)
+- Follow the [Roots Blog](https://roots.io/blog/)
+- Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
