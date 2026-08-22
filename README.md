@@ -26,8 +26,8 @@ For developers on Windows we use:
 ## Installation
 
 1. Download this repo as a zip
-2. Creat a new repo in your favorite git system and clone it in your local dev enviroment. If you use XAMPP is `htdocs`.
-3. Add the files you donwloaded in your new repo named `newproject ` or as you wish (you will need to change it in other places too as listed below)
+2. Create a new repo in your favorite git system and clone it in your local dev environment. 
+3. Add the files you downloaded in your new repo named `newproject ` or as you wish - you will need to change it in other places too as listed below.
 4. Open your cli and in the root director run `composer install & composer update`
 5. Create a copy of the `env.example` and name it `.env`.
 6. Create a Database and a Database user in your local environment and add the credentials in the `.env` file as following:
@@ -36,7 +36,7 @@ For developers on Windows we use:
     * `DB_USER` - Database user
     * `DB_PASSWORD` - Database password (don't use the # character in the password - it will break)
   * You will also need to add WordPress Key. You can create yours [here](https://roots.io/salts.html).
-  * We have alreay provided the rest of the enviromental valiable for local developemnt (newproject.local). Ofcourse you can change them as you wish. For deployment you will create a new `.env` file with the production enviromental variables.
+  * We have already provided the rest of the environmental variables for local development (newproject.local). Of course you can change them as you wish. For deployment you will create a new `.env` file with the production environmental variables.
 7. If you use XAMPP or Apache you should follow the following to access your website from your browser
 
 * Go to your XAMPP directory and open apache config file located at C:\xampp\apache\conf\httpd.conf in any text editor and locate the following lines:
@@ -66,7 +66,7 @@ For developers on Windows we use:
     </VirtualHost>
     ```
 8. Go to the Child theme directory `web/app/themes/understap-child` and run `npm install`
-9. Access in your browser `http://newproject.local` to finalize your WordPress instalation. You may need to restart appache.
+9. Access in your browser `http://newproject.local` to finalize your WordPress installation. You may need to restart apache.
 
 You are ready! You can autorecomplie SASS with `npm run watch`
 To use  BrowserSync you go to the Child Directory and run `npm run watch-bs`. You may need to first change the local browsersync output in `/src/build/browser-sync.config.js`. All changes you make in your SASS files will be automatically compiled and if you access the website through `http://newproject.local:3000` the website will reload automatically everytime a change is made.
