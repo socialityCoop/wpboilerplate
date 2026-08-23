@@ -16,7 +16,6 @@ actully all features of Understrap, Understrap Child and Bedrock combined.
 
 * PHP >= 8.3
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
-* SVN - [Install `winget install TortoiseSVN.TortoiseSVN --override "/quiet /qn ADDLOCAL=ALL"`]
 * Node & npm - [Install](https://nodejs.org/en/)
 
 For developers on Windows we use:
