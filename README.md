@@ -29,9 +29,9 @@ For development on Windows we use:
 
 ## Installation 
 
-You can use the skill we have created to have an agent do the instalation for you in  `.agents/skills/bedrock-installation`
+You can use the skill we have created to have an agent do the installation for you in  `.agents/skills/bedrock-installation`
 
-Otherwsie follow these steps youself in order to install a new site on a local Windows WAMP environment.
+Otherwise follow these steps yourself in order to install a new site on a local Windows WAMP environment.
 
 * Download this repo as a zip
 * Create a new repo in your favorite git system and clone it in your local dev environment. 
