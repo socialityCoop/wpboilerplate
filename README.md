@@ -1,56 +1,87 @@
-<p align="center">
-  <a href="https://roots.io/bedrock/">
-    <img alt="Bedrock" src="https://cdn.roots.io/app/uploads/logo-bedrock.svg" height="100">
-  </a>
-</p>
 
-<p align="center">
-  <a href="https://packagist.org/packages/roots/bedrock"><img alt="Packagist Installs" src="https://img.shields.io/packagist/dt/roots/bedrock?label=projects%20created&colorB=2b3072&colorA=525ddc&style=flat-square"></a>
-  <a href="https://packagist.org/packages/roots/wordpress"><img alt="roots/wordpress Packagist Downloads" src="https://img.shields.io/packagist/dt/roots/wordpress?label=roots%2Fwordpress%20downloads&logo=roots&logoColor=white&colorB=2b3072&colorA=525ddc&style=flat-square"></a>
-  <img src="https://img.shields.io/badge/dynamic/json.svg?url=https://raw.githubusercontent.com/roots/bedrock/master/composer.json&label=wordpress&logo=roots&logoColor=white&query=$.require[%22roots/wordpress%22]&colorB=2b3072&colorA=525ddc&style=flat-square">
-  <a href="https://github.com/roots/bedrock/actions/workflows/ci.yml"><img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/roots/bedrock/ci.yml?branch=master&logo=github&label=CI&style=flat-square"></a>
-  <a href="https://twitter.com/rootswp"><img alt="Follow Roots" src="https://img.shields.io/badge/follow%20@rootswp-1da1f2?logo=twitter&logoColor=ffffff&message=&style=flat-square"></a>
-  <a href="https://github.com/sponsors/roots"><img src="https://img.shields.io/badge/sponsor%20roots-525ddc?logo=github&style=flat-square&logoColor=ffffff&message=" alt="Sponsor Roots"></a>
-</p>
+# WordPress Boilerplate (Bedrock & UnderStrap)
 
-<p align="center">WordPress boilerplate with Composer, easier configuration, and an improved folder structure</p>
+To be honest it is not such a huge deal. We basically have combined the architecture of [Bedrock](https://roots.io/bedrock/) provided by [Roots](https://roots.io/) with [UnsterstrapChild](https://github.com/understrap/understrap-child/). We have also added some plugins we use in all our websites.
 
-<p align="center">
-  <a href="https://roots.io/bedrock/">Website</a> &nbsp;&nbsp; <a href="https://roots.io/bedrock/docs/installation/">Documentation</a> &nbsp;&nbsp; <a href="https://github.com/roots/bedrock/releases">Releases</a> &nbsp;&nbsp; <a href="https://discourse.roots.io/">Community</a>
-</p>
+Our goal is to provide our developers at [Sociality](https://sociality.coop) with a ready to work WordPress installation in order to create custom websites using:
 
-## Support us
+* Composer for plugin managment
+* Git for versioning
+* npm for SASS processing
 
-Roots is an independent open source org, supported only by developers like you. Your sponsorship funds [WP Packages](https://wp-packages.org/) and the entire Roots ecosystem, and keeps them independent. Support us by purchasing [Radicle](https://roots.io/radicle/) or [sponsoring us on GitHub](https://github.com/sponsors/roots) — sponsors get access to our private Discord.
-
-### Requirments
+### Requirements
 
 * PHP >= 8.3
-* Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+* Composer - [Install](https://getcomposer.org/)
 * Node & npm - [Install](https://nodejs.org/en/)
 
-## Overview
+For development on Windows we use:
 
-Bedrock is a WordPress boilerplate for developers that want to manage their projects with Git and Composer. Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](http://12factor.net/) methodology, including the [WordPress specific version](https://roots.io/twelve-factor-wordpress/).
+* WAMP- [Install](https://www.wampserver.com/en/)
+* WP-CLI - [Install](https://wp-cli.org/)
+* Git for Windows - [Install](https://git-scm.com/download/win)
 
-- Better folder structure
-- Dependency management with [Composer](https://getcomposer.org)
-  - [`roots/wordpress`](https://wp-packages.org/wordpress-core) package for WordPress core
-  - [WP Packages](https://wp-packages.org/) repository for WordPress plugins and themes
-- Easy WordPress configuration with environment specific files
-- Environment variables with [Dotenv](https://github.com/vlucas/phpdotenv)
-- Autoloader for mu-plugins (use regular plugins as mu-plugins)
+## Documentation
 
-## Getting Started
+* Bedrock documentation is available at [https://roots.io/bedrock/docs/](https://roots.io/bedrock/docs/).
+* Understrap Child documentation is available at [https://github.com/understrap/understrap-child](https://github.com/understrap/understrap-child)
+* Understrap documentation is available at [https://github.com/understrap/understrap](https://github.com/understrap/understrap)
 
-See the [Bedrock installation documentation](https://roots.io/bedrock/docs/installation/).
+## Installation 
 
-## Community
+You can use the skill we have created to have an agent do the instalation for you in  `.agents/skills/bedrock-installation`
 
-Keep track of development and community news.
+Otherwsie follow these steps youself in order to install a new site on a local Windows WAMP environment.
 
-- Join us on Discord by [sponsoring us on GitHub](https://github.com/sponsors/roots)
-- Join us on [Roots Discourse](https://discourse.roots.io/)
-- Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-- Follow the [Roots Blog](https://roots.io/blog/)
-- Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
+* Download this repo as a zip
+* Create a new repo in your favorite git system and clone it in your local dev environment. 
+* Add the files you downloaded in your new repo named `mysite.local ` or as you wish - you will need to change it in other places too as listed below.
+
+### 1. Apache virtual host
+
+* Name the virtual host in WAMPP interface after the current project folder, for example `mysite.local`.
+* Point `DocumentRoot` and `<Directory>` to this project's `web/` folder only.
+* Reload Apache after saving the configuration.
+
+### 2. Windows hosts file
+
+Add the virtual host name to `C:\Windows\System32\drivers\etc\hosts`, for example:
+
+```
+127.0.0.1 mysite.local
+```
+
+### 3. Composer packages
+
+* In `composer.json`, update the theme and plugin requirements (`wp-theme/*` and `wp-plugin/*`) to the latest versions listed on [WP Packages](https://wp-packages.org/).
+* Run:
+
+```bash
+composer install
+composer update
+```
+
+### 4. Database and `.env`
+
+* Create a new MySQL database and user for this site in WAMP phpMyAdmin. Use a strong password.
+* Copy `.env.example` to `.env` and fill in the database name, username, and password.
+* Set `WP_HOME` to the local URL whose hostname matches the folder/vhost (e.g. `http://mysite.local`).
+* * Fetch the WordPress salts from [roots.io/salts.html](https://roots.io/salts.html) and add them to `.env`.
+
+### 5. WordPress installation
+
+WordPress core is already installed as a Composer package in `web/wp`, so no download is needed. Access `mysite.local` in your browser to conclude the installation.
+
+### 6. Child theme and plugins
+
+* Run `npm install` in `web/app/themes/understrap-child`.
+* Activate the child theme and the project plugins.
+* Change the `Text Domain` in `web/app/themes/understrap-child/style.css` to match the project.
+* Rename `web/app/plugins/site-specific-plugin` to match the project, update its `Text Domain`, and activate it.
+
+## Usage
+
+* In `AGENTS.npm` we have added some development rules we follow
+* Run `npm run watch` inside the child theme to compile SCSS and JS
+
+* If you use Zed with the WordPress MCP server, configure it through **Settings → AI → MCP Servers**. Zed stores this under `context_servers`; Cursor users can maintain `.cursor/mcp.json` separately.
