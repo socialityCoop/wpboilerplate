@@ -23,7 +23,7 @@
 
 Roots is an independent open source org, supported only by developers like you. Your sponsorship funds [WP Packages](https://wp-packages.org/) and the entire Roots ecosystem, and keeps them independent. Support us by purchasing [Radicle](https://roots.io/radicle/) or [sponsoring us on GitHub](https://github.com/sponsors/roots) — sponsors get access to our private Discord.
 
-### Sponsors
+### Requirments
 
 * PHP >= 8.3
 * Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
