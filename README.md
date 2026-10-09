@@ -9,7 +9,7 @@ Our goal is to provide our developers at [Sociality](https://sociality.coop) wit
 * Git for versioning
 * npm for SASS processing
 
-### Requirements
+## Requirements
 
 * PHP >= 8.3
 * Composer - [Install](https://getcomposer.org/)
