@@ -9,7 +9,7 @@ Use this workflow only when installing a new site from this Roots Bedrock boiler
 
 ## 1. Apache virtual host
 
-- Set the virtual-host name to the current project folder name, such as `sahel.local`.
+- Set the virtual-host name to the current project folder name.
 - Set the document root to this project's `web/` folder only. Do not inspect other folders to choose a document root.
 - Use the latest PHP version present in the WAMP installation through FCGI.
 - Typical files are `C:\wamp64\bin\apache\apache*\conf\extra\httpd-vhosts.conf` and the WAMP PHP FCGI configuration.
