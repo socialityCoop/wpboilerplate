@@ -45,9 +45,6 @@ phpunit.xml
 # WP-CLI
 wp-cli.local.yml
 
-# Agents
-.agents/
-
 
 # ------------------------------------------------------------------------
 # This file specifies intentionally untracked files that Git should ignore
@@ -77,6 +74,7 @@ wp-cli.local.yml
 !.gitattributes
 !.github
 !.gitignore
+!.agents
 
 # Ignore all files with .lock extentions
 *.lock
