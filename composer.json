@@ -23,6 +23,18 @@
       "name": "wp-packages",
       "type": "composer",
       "url": "https://repo.wp-packages.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress/mcp-adapter",
+        "version": "0.6.1",
+        "type": "wordpress-plugin",
+        "dist": {
+          "url": "https://github.com/WordPress/mcp-adapter/releases/download/v0.6.1/mcp-adapter.zip",
+          "type": "zip"
+        }
+      }
     }
   ],
   "require": {
@@ -34,10 +46,13 @@
     "roots/wordpress": "7.1",
     "roots/wp-config": "^1.0",
     "vlucas/phpdotenv": "^5.0",
-    "wp-theme/understrap":"1.2.4",
-    "wp-plugin/honeypot":"dev-trunk",
-    "wp-plugin/wordpress-seo":"dev-trunk",
-    "wp-plugin/w3-total-cache":"dev-trunk"
+    "wordpress/mcp-adapter": "0.6.1",
+    "wp-plugin/honeypot": "2.4.02",
+    "wp-plugin/w3-total-cache": "2.10.5",
+    "wp-plugin/disable-gutenberg": "3.3.2",
+    "wp-plugin/wordpress-seo": "28.3",
+    "wp-theme/understrap": "1.2.4",
+    "wp-plugin/enable-abilities-for-mcp": "2.5.0"
   },
   "require-dev": {
     "laravel/pint": "^1.0",
