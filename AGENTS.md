@@ -10,6 +10,7 @@ This project is a Roots Bedrock WordPress site using the UnderStrap parent theme
 - Install third-party WordPress plugins and themes with Composer whenever they are available through `https://repo.wp-packages.org`.
 - Use Advanced Custom Fields for custom fields. Install it with `composer require wp-plugin/advanced-custom-fields` when it is not already available. Use ACF directly; do not add fallback wrappers around `get_field()`.
 - Use WPML for multilingual functionality. Ask the user to provide the plugin when it is not available.
+- - When applicable for relevant functionality prioritize using code from `https://github.com/socialityCoop/components-library`
 
 ## Theme, CSS, and JavaScript
 
